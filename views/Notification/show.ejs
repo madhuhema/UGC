@@ -1,0 +1,22 @@
+<h2>Notifications</h2>
+<hr>
+<div class="col-md-4"></div><div class='col-md-4'>
+<table>
+  <th>Priority</th>
+  <th>Sender Id</th>
+  <th>Message</th>
+  <th>Receiver Id</th>
+  <th>View Link</th>
+
+  <% _.each(notifications,function(notification){ %>
+  <tr> 
+    <td><%= notification.priority %></td>
+    <td><%=notification.sender_id %></td> 
+    <td><%= notification.message %> </td>
+    <td><%=notification.receiver_id%></td> 
+    <td><a href="<%=notification.link%>" class="btn btn-sm btn-default">click here</a></td> 
+  </tr>
+   <% }) %>
+</table></div>
+<div class="col-md-4"></div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Proposal submission</h2>
+  
+  <form class="form-horizontal" action="/proposal/create" id="proposalform" enctype="multipart/form-data" method="POST">
+
+   <input type="hidden" name="approver.id" value="<%=proposal.id%>" />
+  <div class="form-group">
+      <label for="status">Proposal status</label>
+      <input type="text" class="form-control" name="status" id="status">
+    </div>
+    <div class="form-group">
+      <label for="alloted_time_interval">alloted time interval</label>
+      <input type="text" class="form-control" name="alloted_time_interval" id="alloted_time_interval">
+    </div>
+    <div class="form-group">
+      <label for="last_update">last update</label>
+      <input type="text" class="form-control" name="last_update" id="last_update">
+    </div>
+  <div class="form-group">
+  <label  for="singlebutton"> </label>
+  <div class=" ">
+    <button  name="singlebutton" type="submit" class="btn btn-primary">submit</button>
+      <button name="singlebutton" type="reset" class="btn btn-primary">reset</button>
+  </div>
+</div>
+    </form>
+    </div>

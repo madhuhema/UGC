@@ -1,0 +1,98 @@
+
+<h2>Edit your user details here</h2>
+<form action="/user/update/<%= user.id %>" method="POST" class="form-control">
+  <input type='hidden' >
+  
+  <div class="form-group">
+  <label  for="first_name">First Name</label>
+  <input value="<%=user.firstname %>" name="firstname" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="middlename">Middle Name</label>
+  <input value="<%=user.middlename %>" name="middlename" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="lastname">Last Name</label>
+  <input value="<%=user.lastname %>" name="lastname" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="gender">Gender</label>
+  <select name="gender" required class="form-control">
+    <option selected disabled>select</option>
+    <option value="1">male</option>
+    <option value="0">female</option>
+  </select>
+  <input value="<%=user.gender %>" name="gender" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="date_of_birth">DateOfBirth</label>
+  <input value="<%=user.date_of_birth %>" name="date_of_birth" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="email">Email</label>
+  <input value="<%=user.email %>" name="email" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="password">Password</label>
+  <input value="<%=user.password %>" name="password" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="contact_no">Phone Number</label>
+  <input value="<%=user.contact_no %>" name="contact_no " type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label for="aadhar_number">Aadhar number</label>
+  <input value="<%=user.aadhar_number %>" name="aadhar_number" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">  
+ <label  for="city">City</label>
+  <input value="<%=user.city %>" name="city" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+<label for="state">State</label>
+<select class="form-control" name="state" id="state">
+  <option selected disabled="disabled">------------Select State------------</option>
+    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+    <option value="Andhra Pradesh">Andhra Pradesh</option>
+    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+    <option value="Assam">Assam</option>
+    <option value="Bihar">Bihar</option>
+    <option value="Chandigarh">Chandigarh</option>
+    <option value="Chhattisgarh">Chhattisgarh</option>
+    <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+    <option value="Daman and Diu">Daman and Diu</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Goa">Goa</option>
+    <option value="Gujarat">Gujarat</option>
+    <option value="Haryana">Haryana</option>
+    <option value="Himachal Pradesh">Himachal Pradesh</option>
+    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+    <option value="Jharkhand">Jharkhand</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Kerala">Kerala</option>
+    <option value="Lakshadweep">Lakshadweep</option>
+    <option value="Madhya Pradesh">Madhya Pradesh</option>
+    <option value="Maharashtra">Maharashtra</option>
+    <option value="Manipur">Manipur</option>
+    <option value="Meghalaya">Meghalaya</option>
+    <option value="Mizoram">Mizoram</option>
+    <option value="Nagaland">Nagaland</option>
+    <option value="Orissa">Orissa</option>
+    <option value="Pondicherry">Pondicherry</option>
+    <option value="Punjab">Punjab</option>
+    <option value="Rajasthan">Rajasthan</option>
+    <option value="Sikkim">Sikkim</option>
+    <option value="Tamil Nadu">Tamil Nadu</option>
+    <option value="Tripura">Tripura</option>
+    <option value="Uttaranchal">Uttaranchal</option>
+    <option value="Uttar Pradesh">Uttar Pradesh</option>
+    <option value="West Bengal">West Bengal</option>
+  </select>
+  <input value="<%=user.state %>" name="state" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="pincode">Pincode</label>
+  <input value="<%= user.pincode %>" name="pincode" type="text" class="form-control"/>
+  </div>
+  <input type="submit" value="Save" class="btn btn-lg btn-primary btn-block" />
+ </form>

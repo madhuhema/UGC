@@ -1,0 +1,278 @@
+{
+  "data": {
+    "profile": [],
+    "proposal": [],
+    "update": [],
+    "user": [
+      {
+        "firstname": "sudha",
+        "lastname": "manigandhi",
+        "email": "sudha@gmail.com",
+        "password": "sudhasudha",
+        "date_of_birth": "1997-12-12T00:00:00.000Z",
+        "address": "no 320 gandhi",
+        "city": "chennai",
+        "state": "Tamil Nadu",
+        "pincode": 600012,
+        "gender": "0",
+        "aadhar_number": "123456789234",
+        "contact_no": "1234567567",
+        "role": "user",
+        "createdAt": "2017-03-29T22:08:05.066Z",
+        "updatedAt": "2017-03-29T22:08:05.066Z",
+        "id": 1
+      },
+      {
+        "firstname": "sudha",
+        "middlename": "",
+        "lastname": "manigandhi",
+        "email": "suthandiraamanigandhi@gmail.com",
+        "password": "sudha",
+        "date_of_birth": "1997-08-15T00:00:00.000Z",
+        "address": "no 329 gandhi",
+        "city": "chennai",
+        "state": "Tamil Nadu",
+        "pincode": 600012,
+        "gender": "0",
+        "aadhar_number": "234567876534",
+        "contact_no": "4567345678",
+        "role": "user",
+        "createdAt": "2017-03-29T23:34:12.702Z",
+        "updatedAt": "2017-03-29T23:34:12.702Z",
+        "id": 2
+      },
+      {
+        "firstname": "maddy",
+        "middlename": "",
+        "lastname": "ashwin",
+        "email": "madhuashwin@gmail.com",
+        "password": "maddy",
+        "date_of_birth": "1994-10-14T00:00:00.000Z",
+        "address": "No.20,mvc nagar,chennai",
+        "city": "chennai",
+        "state": "Tamil Nadu",
+        "pincode": 600027,
+        "gender": "0",
+        "aadhar_number": "987654321098",
+        "contact_no": "9840810204",
+        "role": "user",
+        "createdAt": "2017-04-01T03:46:23.092Z",
+        "updatedAt": "2017-04-01T04:35:43.829Z",
+        "id": 3,
+        "contact_no ": "9840810204"
+      }
+    ]
+  },
+  "schema": {
+    "profile": {
+      "qualification": {
+        "type": "string"
+      },
+      "area_of_specialization": {
+        "type": "string"
+      },
+      "college_name": {
+        "type": "string"
+      },
+      "college_email": {
+        "type": "string"
+      },
+      "college_phone_no": {
+        "type": "integer"
+      },
+      "designation": {
+        "type": "string"
+      },
+      "teaching_experience": {
+        "type": "integer"
+      },
+      "research_experience": {
+        "type": "integer"
+      },
+      "doctrate_degree_year": {
+        "type": "integer"
+      },
+      "doctrate_degree_title": {
+        "type": "string"
+      },
+      "retired": {
+        "type": "boolean"
+      },
+      "papers_published": {
+        "type": "integer"
+      },
+      "papers_accepted": {
+        "type": "integer"
+      },
+      "papers_communicated": {
+        "type": "integer"
+      },
+      "book_published": {
+        "type": "integer"
+      },
+      "book_accepted": {
+        "type": "integer"
+      },
+      "book_communicated": {
+        "type": "integer"
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "proposal": {
+      "broad_subject": {
+        "type": "string"
+      },
+      "college_account_number": {
+        "type": "string"
+      },
+      "college_approval_status": {
+        "type": "boolean"
+      },
+      "undertaking_college_name": {
+        "type": "string"
+      },
+      "project_title": {
+        "type": "string"
+      },
+      "abstract": {
+        "type": "string"
+      },
+      "project_duration": {
+        "type": "datetime"
+      },
+      "estimated_budget": {
+        "type": "integer"
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "update": {
+      "project_status": {
+        "type": "string"
+      },
+      "amount": {
+        "type": "integer"
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "firstname": {
+        "type": "string"
+      },
+      "lastname": {
+        "type": "string"
+      },
+      "middlename": {
+        "type": "string"
+      },
+      "gender": {
+        "type": "string"
+      },
+      "date_of_birth": {
+        "type": "datetime"
+      },
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "password": {
+        "type": "string"
+      },
+      "contact_no": {
+        "type": "string",
+        "unique": true
+      },
+      "address": {
+        "type": "string"
+      },
+      "aadhar_number": {
+        "type": "string"
+      },
+      "city": {
+        "type": "string"
+      },
+      "state": {
+        "type": "string"
+      },
+      "pincode": {
+        "type": "integer"
+      },
+      "role": {
+        "type": "string"
+      },
+      "admin_security_key": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "profile": {},
+    "user": {
+      "id": 3
+    },
+    "proposal": {},
+    "update": {}
+  }
+}

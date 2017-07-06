@@ -1,0 +1,51 @@
+<br>
+<legend>User Detail:</legend>
+<br>
+<table class="table">
+<tr>
+<th>user name</th>
+<td><%= user.firstname+" "+user.lastname %></td>
+</tr>
+  <tr>
+  <th>gender</th>
+
+  <!-- if else condition to view gender -->
+    <% if(user.gender == 1){ %>
+        <td>Male</td>
+    <% }else {%>
+        <td>Female</td>
+    <% } %>
+  <!-- end of gender condition -->
+  </tr>
+  <tr>
+  <th>Contact Number</th>
+  <td><%= user.contact_no %></td>
+  </tr>
+  <tr>
+  <th>Email Id</th>
+  <td><%= user.email %></td>
+  </tr>
+  <tr>
+  <th>Date of Birth</th>
+  <td><%= user.date_of_birth %></td>
+  </tr>
+  <tr>
+  <th>Address</th>
+  <td><%= user.address %></td>
+  </tr>
+  <tr>
+  <th>Aadhar Number</th>
+  <td><%= user.aadhar_number %></td>
+  </tr>
+  <tr>
+  <th>City</th>
+  <td><%= user.city %></td>
+  </tr>
+  <tr>
+  <th>State</th>
+  <td><%= user.state %></td>
+  </tr>
+  <tr>
+  <td><a class="btn btn-medium btn-primary" href="/user/edit/<%= user.id %>">Edit</a></td>
+  </tr>
+</table>  

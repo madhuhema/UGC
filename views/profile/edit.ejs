@@ -1,0 +1,91 @@
+<h2>Edit your profile details here</h2>
+<hr>
+<form action="/profile/update/<%= profile.id %>" method="POST" class="form-control">
+  <input type='hidden'>
+  <div class="form-group">
+    <label  for="area_of_specialization">Area of specialization:</label>
+    <input value="<%=profile.area_of_specialization %>" name="area_of_specialization" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="qualification">Qualification: </label>
+  <input value="<%=profile.qualification %>" name="qualification" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="designation">Designation: </label>  
+  <div class=" ">
+    <input value="<%=profile.designation %>" name="designation" type="text" class="form-control"/>
+  </div>
+    <div class="form-group">
+   <label for="college_name">College Name:</label>
+   <div class=" ">
+  <input value="<%=profile.college_name %>" name="college_name" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label class="college_mail">College mail:</label>
+  <div class=" ">
+  <input value="<%=profile.college_email %>" name="college_email" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+   <label class="college-phone-number">College phone number:</label>
+   <div class=" ">
+  <input value="<%=profile.college_phone_no %>" name="college_phone_no" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="teaching_experience">Teaching Experience: </label>
+  <div class=" ">
+  <input value="<%=profile.teaching_experience %>" name="teaching_experience " type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="research_experience">Research Experience: </label>
+  <div class=" ">
+  <input value="<%=profile.research_experience %>" name="research_experience" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="doctrate_degree_year">Doctrate Degree Year: </label>
+  <div class=" ">
+  <input value="<%=profile.doctrate_degree_year %>" name="doctrate_degree_year" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="doctrate_degree_title">Doctrate Degree: </label>
+  <div class=" ">
+  <input value="<%=profile.doctrate_degree_title %>" name="doctrate_degree_title" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="retired">Retired</label>
+  <select name="retired" required class="form-control">
+    <option selected disabled>select</option>
+    <option value="true">Yes</option>
+    <option value="false">No</option>
+  </select>
+  </div>
+  <div class="form-group">
+  <label  for="papers_published">Number of papers published: </label>
+  <div class=" ">
+  <input value="<%=profile.papers_published %>" name="papers_published" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="papers_accepted">Number of papers accepted: </label>
+  <div class=" ">
+  <input value="<%= profile.papers_accepted%>" name="papers_accepted" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="papers_communicated">Number of papers communicated: </label>
+  <div class=" ">
+  <input value="<%=profile.papers_communicated %>" name="papers_communicated" type="text" class="form-control"/>
+  </div>
+ <div class="form-group">
+  <label  for="book_published">Number of Books published: </label>
+  <div class=" ">
+  <input value="<%=profile.book_published %>" name="book_published" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label  for="book_accepted">Number of Books accepted: </label>
+  <div class=" ">
+  <input value="<%=profile.book_accepted %>" name="book_accepted" type="text" class="form-control"/>
+  </div>
+  </br>
+  <div class="btn-group">
+    <input type="submit" value="Save" class="btn btn-lg btn-primary" />
+    <input type="reset" value="reset" class="btn btn-lg btn-danger" />
+  </div>
+ </form>

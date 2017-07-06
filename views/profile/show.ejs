@@ -1,0 +1,83 @@
+<br>
+<legend>profile Detail:</legend>
+<br>
+<table class="table">
+<tr>
+  <th>Area of Specialization</th>
+  <td><%= profile.area_of_specialization %></td>
+</tr>
+<tr>
+  <th>Qualification</th>
+  <td><%= profile.qualification %></td>
+</tr>
+<tr>
+  <th>designation</th>
+  <td><%= profile.designation %></td>
+</tr>
+<th>retired</th>
+ <% if(profile.retired == 1){ %>
+  <td>yes</td>
+  <% }else {%>
+  <td>no</td>
+  <% } %>
+</tr>
+<tr>
+  <th>College Name</th>
+  <td><%= profile.college_name %></td>
+</tr>
+<tr>
+  <th>College Email</th>
+  <td><%= profile.college_email %></td>
+</tr>
+<tr>
+  <th>College Phone Number</th>
+  <td><%= profile.college_phone_no %></td>
+</tr>
+<tr>
+  <th>Teaching Experience</th>
+  <td><%= profile.teaching_experience %></td>
+</tr>
+<tr>
+  <th>Research Experience</th>
+  <td><%= profile.research_experience %></td>
+</tr>
+<tr>
+  <th>Doctrate Degree</th>
+  <td><%= profile.doctrate_degree_title %></td>
+</tr>
+<tr>
+  <th>Doctrate Year</th>
+  <td><%= profile.doctrate_degree_year %></td>
+</tr>
+
+<tr>
+  <th>Papers Published</th>
+  <td><%= profile.papers_published %></td>
+</tr>
+
+<tr>
+  <th>Papers Accepted</th>
+  <td><%= profile.papers_accepted %></td>
+</tr>
+<tr>
+  <th>Papers Communicated</th>
+  <td><%= profile.papers_communicated %></td>
+</tr>
+<tr>
+  <th>Books published</th>
+  <td><%= profile.book_published %></td>
+</tr>
+<tr>
+  <th>Books Accepted</th>
+  <td><%= profile.book_accepted %></td>
+</tr>
+<tr>
+  <th>Books Communicated</th>
+  <td><%= profile.books_communicated %></td>
+</tr>
+<tr>
+ <td><a class="btn btn-medium btn-primary" href="/profile/edit/<%= profile.owner %>">Edit</a></td>
+</tr>
+</table>
+
+

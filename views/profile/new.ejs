@@ -1,0 +1,151 @@
+<div class="container">
+<form class="form-horizontal" action="/profile/create" id="profile" method="POST">
+ 
+
+<fieldset>
+
+<!-- Form Name -->
+<legend>PROFILE</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label  for="area_of_specialization">Area of specialization: </label>  
+  
+  <input id="area_of_specialization" name="area_of_specialization" type="text" placeholder="Field of work" class="form-control" >
+    
+ 
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label  for="qualification">Qualification: </label>  
+  
+  <input id="qualification" name="qualification" type="text" placeholder="BE/ME/PhD" class="form-control">
+    
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label  for="designation">Designation: </label>  
+  <div class=" ">
+  <input id="designation" name="designation" type="text" placeholder="Professor/Principal" class="form-control" >
+    
+  </div>
+</div>
+<div class="form-group">
+ <label for="college_name">College Name:</label>
+ <div class=" ">
+  <input  id="college_name" name="college_name" type="text" class="form-control">
+  </div>
+</div>
+<div class="form-group">
+  <label class="college-phone-number">College phone number:</label>
+  <div class=" ">
+  <input type="text" name="college_phone_no" id="college_phone_no" class="form-control" >
+ </div>
+</div>
+
+<div class="form-group">
+  <label class="college_mail">College mail:</label>
+  <div class=" ">
+  <input type="text" name="college_email" maxlength="25" id="college_mail" class="form-control">
+  </div>
+</div>
+<div class="form-group">
+  <label  for="retired">Retired</label>
+  <select name="retired" required class="form-control">
+    <option selected disabled>select</option>
+    <option value="true">Yes</option>
+    <option value="false">No</option>
+  </select>
+</div>
+<div class="form-group">
+  <label  for="teaching_experience">Teaching Experience: </label>
+  <div class=" ">
+    <input id="teaching_experience" type="text" name="teaching_experience" placeholder="No. of years of experience" class="form-control">
+     
+  </div>
+</div>
+<div class="form-group">
+  <label  for="research_experience">Research Experience: </label>
+  <div class=" ">
+    <input id="research_experience" type="text" name="research_experience" placeholder="No. of years of experience" class="form-control">
+     
+  </div>
+</div>
+
+<div class="form-group">
+  <label  for="doctrate_degree_year">Doctrate Degree Year: </label>
+  <div class=" ">
+    <input id="doctrate_degree_year" type="text" name="doctrate_degree_year" placeholder="Year of Doctrate degree Completion" class="form-control">
+     
+  </div>
+</div>
+<div class="form-group">
+  <label  for="doctrate_degree_title">Doctrate Degree: </label>
+  <div class=" ">
+    <input id="doctrate_degree_title" type="text" name="doctrate_degree_title" placeholder="Field of Doctrate degree" class="form-control">
+     
+  </div>
+</div>
+<div class="form-group">
+  <label  for="papers_published">Number of papers published: </label>
+  <div class=" ">
+    <input id="papers_published" type="text" name="papers_published" placeholder="Papers published" class="form-control">
+     
+  </div>
+</div>
+<div class="form-group">
+  <label  for="papers_accepted">Number of papers accepted: </label>
+  <div class=" ">
+    <input id="papers_accepted" type="text" name="papers_accepted" placeholder="Papers Accpted" class="form-control">
+     
+  </div>
+</div>
+<div class="form-group">
+  <label  for="papers_communicated">Number of papers communicated: </label>
+  <div class=" ">
+    <input id="papers_communicated" type="text" name="papers_communicated" placeholder="Papers Communicated" class="form-control">
+     
+  </div>
+</div>
+<div class="form-group">
+  <label  for="book_published">Number of Books published: </label>
+  <div class=" ">
+    <input id="book_published" type="text" name="book_published" placeholder="books published" class="form-control">
+     
+  </div>
+</div>
+<div class="form-group">
+  <label  for="book_accepted">Number of Books accepted: </label>
+  <div class=" ">
+    <input id="book_accepted" type="text" name="book_accepted" placeholder="books accepted" class="form-control">
+     
+  </div>
+</div>
+
+
+
+<!-- File Button --> 
+<div class="form-group">
+  <label  for="filebutton">Upload Photo: </label>
+  <div class=" ">
+    <input id="filebutton" name="filebutton" class="input-file" type="file" >
+  </div>
+</div>
+
+
+<!-- Button -->
+<div class="form-group">
+  <label  for="singlebutton"> </label>
+  <div class=" ">
+    <button  name="singlebutton" type="submit" class="btn btn-primary">submit</button>
+      <button name="singlebutton" type="reset" class="btn btn-primary">reset</button>
+  </div>
+</div>
+<input type="hidden" name="owner" value="<%=profile.id %>"/>
+
+</fieldset>
+</form>
+
+</div>

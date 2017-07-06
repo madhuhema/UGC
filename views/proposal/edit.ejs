@@ -1,0 +1,45 @@
+<h2>Edit your proposal details here</h2>
+<hr>
+<form action="/proposal/update/<%= proposal.owner%>" method="POST" id="proposal_details" class="form-control">
+   <input type='hidden' value="<%=proposal.id%>">
+  
+<div class="form-group">
+  <label for="project_title">Project Title</label>
+  <input value="<%=proposal.project_title %>" name="project_title" type="text" placeholder="Enter project Title" class="form-control"/>
+</div>
+ <div class="form-group">
+     <label for="broad_subject">Broad Subject</label>
+  <input value="<%=proposal.broad_subject%>" name="broad_subject" type="text" placeholder="Enter Broard Subject" class="form-control"/>
+  </div>
+  <div class="form-group">
+     <label for="estimated_budget">Estimated Budget</label>
+  <input value="<%=proposal.estimated_budget %>" name="estimated_budget" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+     <label for="project_duration">Project Duration</label>
+  <input value="<%=proposal.project_duration %>" name="project_duration" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+  <label for="abstract">Abstract</label>
+  <input value="<%=proposal.abstract %>" name="abstract" type="text" class="form-control"/>
+  </div>
+  <div class="form-group">
+      <label for="college_account_number">College Account Number</label>
+ <input value="<%=proposal.college_account_number %>" name="college_account_number" type="text" class="form-control"/>
+ </div>
+ <div class="form-group">
+      <label for="undertaking_college_name">Undertaking College Name</label>
+      <input value="<%=proposal.undertaking_college_name %>" name="undertaking_college_name" type="text" class="form-control"/>
+ </div>
+ <div class="form-group">
+  <label for="college_approval_status">College Approval Status</label>
+    <div class="radio">
+  <label><input type="radio" name="college_approval_status" id="college_approval_status" value="true">Yes</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="college_approval_status" id="college_approval_status" value="false">No</label>
+  <input value="<%=proposal.college_approval_status %>" name=" college_approval_status" type="text" class="form-control"/>
+  </div>
+  </div>
+  <input type="submit" value="Save" class="btn btn-lg btn-primary btn-block" />
+ </form>

@@ -1,0 +1,66 @@
+
+<div class="container">
+  <h2>Proposal submission</h2>
+  
+  <form class="form-horizontal" action="/proposal/create" id="proposalform" enctype="multipart/form-data" method="POST">
+
+   <input type="hidden" name="owner" value="<%=proposal.id%>" />
+    <div class="form-group">
+      <label for="project_title">Project Title</label>
+      <input type="text" class="form-control" name="project_title" id="project_title">
+    </div>
+    <div class="form-group">
+     <label for="broad_subject">Broad Subject</label>
+      <input type="text" class="form-control" name="broad_subject" id="broad_subject">
+    </div>
+      <div class="form-group">
+     <label for="estimated_budget">Estimated Budget</label>
+      <input type="text" class="form-control" name="estimated_budget" id="estimated_budget">(approx.)
+    </div>
+    <div class="form-group">
+     <label for="project_duration">Project Duration</label>
+      <input type="text" class="form-control" name="project_duration" id="project_duration">
+    </div>
+    <div class="form-group">
+  <label for="abstract">Abstract</label>
+  <textarea class="form-control" rows="4" name="abstract" id="abstract"></textarea>
+</div>
+<div class="form-group">
+      <label for="college_account_number">College Account Number</label>
+      <input type="text" class="form-control" name="college_account_number" id="college_account_number">
+    </div>
+      <div class="form-group">
+      <label for="undertaking_college_name">Undertaking College Name</label>
+      <input type="text" class="form-control" name="undertaking_college_name" id="undertaking_college_name">
+    </div>
+    College Approval Status
+    <div class="radio">
+  <label><input type="radio" name="college_approval_status" id="college_approval_status" value="true">Yes</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="college_approval_status" id="college_approval_status" value="false">No</label>
+</div>
+<div>
+  <div class="form-group">
+    <label for="file_upload">
+      <input type="file" id="file_upload" name="file_upload" class="form-control"/>
+    </label>
+  </div>
+</div>
+<div class="form-group">
+  <div id="browse_app">
+
+
+  <label for="project_title">Format to upload the proposal</label>
+<a class="btn btn-default btn-lg btn-block" href="/formate">proposal formate</a>
+</div>
+<div class="form-group">
+  <label  for="singlebutton"> </label>
+  <div class=" ">
+    <button class="btn btn-primary">Update</button>
+      <button class="btn btn-primary">Cancel</button>
+
+  </div>
+</div>
+  </form>
+</div>

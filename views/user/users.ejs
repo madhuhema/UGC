@@ -1,0 +1,25 @@
+<legend>All user list</legend>
+<table id="myTable">
+<!-- table headers list -->
+  <th>user name</th><th>gender</th><th>address</th><th>email</th><th>contact number</th><th>aadhar card</th>
+<!-- end of table headers list -->
+<!-- repeat each user from users list -->
+  <% _.each(users,function(user){ %>
+  <tr>
+    <td><%=user.firstname+" "+user.lastname %></td>
+    <td><%=user.gender %></td>
+    <td><%=user.address+" "+user.state+" "+user.city %></td>
+    <td><%=user.email %></td>
+    <td><%=user.contact_no %></td>
+    <td><%=user.aadhar_number %></td>
+    <td><div class="btn-group">
+    <a class="btn btn-medium btn-primary" href="/profile/show/<%= user.id %>">profile</a>
+    <a class="btn btn-medium btn-primary" href="/proposal/show/<%= user.id %>">proposal</a>
+    <a class="btn btn-medium btn-primary" href="/update/show/<%= user.id %>">updates</a>
+    </div></td>
+  </tr>
+  <% }) %>
+<!-- end of user list -->
+</table>
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+<script src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
